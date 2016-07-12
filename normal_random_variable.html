@@ -1,11 +1,26 @@
-<html>
-<head>
-<script src="https://d3js.org/d3-random.v1.min.js"></script>
-<script>
-	var random = d3.randomUniform();
-	console.log(random());
-</script>
-</head>
-<h1>Normal Random Variable</h1>
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
 
-</html>
+body {
+  font: 10px sans-serif;
+}
+
+</style>
+
+<body>
+
+<script src="https://d3js.org/d3-random.v1.min.js"></script>
+<script src="https://d3js.org/d3-axis.v1.min.js"></script>
+<script>
+    var random = d3.randomUniform();
+    console.log(random());
+
+
+    d3.select("body").append("svg")
+        .attr("class", "axis")
+        .attr("width", 1440)
+        .attr("height", 30);
+</script>
+
+<h1>Normal Random Variable</h1>
